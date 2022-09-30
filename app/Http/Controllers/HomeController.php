@@ -9,14 +9,16 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
         protected $model;
-    public function index(Request $request)
+    public function index()
     {
             
+        $users = User::get();
 
+       // dd($users);
         
         return view('home.index');
     }
-    public function cadastroEmpresa()
+    public function cadastroE()
     {
       //  dd('create');
         
