@@ -30,4 +30,9 @@ class HomeController extends Controller
        // dd($id);
         return view('');
     }
+    public function create()
+    {
+        //dd('create');
+        return view('home.empresa.cadastroEmpresa');
+    }
 }
