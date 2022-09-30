@@ -19,7 +19,7 @@ route::get('/home/{prodtos}/EditEmpresa',[EmpresaController::class, 'edit'])->na
 route::put('/home/{id}', [EmpresaController::class, 'update'])->name('');
 
 //rotas para -> cadastrar: empresa / vendedor / produto.
-route::get('/home/cadastroEmpresa', [HomeController::class, 'create'])->name('home.cadastro');     //<-- cadastro de empresa
+route::get('/home/cadastroEmpresa', [HomeController::class, 'create'])->name('empresa.cadastroEmpresa');     //<-- cadastro de empresa
 Route::post('/home', [UserController::class, 'store'])->name('home.store');
 
 route::get('/home/cadastroEmpresa', [HomeController::class, 'create'])->name('home.cadastro');     //<-- cadastro de vendedor
